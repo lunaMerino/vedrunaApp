@@ -1,7 +1,6 @@
 import { View, Text } from 'react-native'
-import React from 'react'
 
-export default function StackA() {
+export function StackB() {
   return (
     <View>
       <Text>StackB</Text>

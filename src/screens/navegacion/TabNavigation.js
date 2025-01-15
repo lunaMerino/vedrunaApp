@@ -1,10 +1,8 @@
-import React from "react";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { Ionicons } from "@expo/vector-icons"; // Para los íconos de la barra de navegación
-import { HomeScreen } from "./HomeScreen.js";
-import { SettingsScreen } from "../tabs/SettingsScreen.js"
+import { Ionicons } from "@expo/vector-icons";
+import { HomeScreen, SettingsScreen } from "../tabs/index";
 
-export function TabNavegation() {
+export function TabNavigation() {
   const Tab = createBottomTabNavigator();
   return (
     // crea la barra de navegación inferior
@@ -18,7 +16,7 @@ export function TabNavegation() {
     >
       <Tab.Screen
         name="Publicaciones"
-        component={HomeScreen}
+        component={ HomeScreen }
 
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -28,7 +26,7 @@ export function TabNavegation() {
       />
       <Tab.Screen
         name="Ajustes"
-        component={SettingsScreen}
+        component={ SettingsScreen }
 
         options={{
           tabBarIcon: ({ color, size }) => (

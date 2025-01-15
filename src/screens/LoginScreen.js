@@ -1,5 +1,4 @@
 import { View, StyleSheet, Text, Image, TextInput, Button } from 'react-native'
-import React from 'react'
 
 export function LoginScreen({ navigation }) {
 
@@ -10,8 +9,8 @@ export function LoginScreen({ navigation }) {
     <View style={styles.container}>
       <View style={styles.containerImage}>
        <Image style={styles.image}
-        source={require('../../assets/vedrunaLogo.png')}
-        />
+        source={{ uri: 'https://s3-alpha-sig.figma.com/img/5cc2/326e/4b369d5d71efbfa1f6961ee2c182d04d?Expires=1737936000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bSZH416UOGXhA4Aliq3e7Kv8LGHYJnn~q~PRmBPfS1u~nsu8DlI~ezms5OkF~alNWW7z7ODkGyg4Lp6cWEBMJZQP-drMkdkbjojQe9-5e3TNeUA9XEMHiyuk~eloimj3eqUBtxLh7jDRbe2nbW01lwTKcHWFLUXRAxUYIqD0-fy4fzEYfuC-MMUhbyf-~z0iaEe5uAupKA-2~ml8Hk8SXhslWOylshxneyocMhf0ZaLe2YaLZgXdUuDqogUjxuKzGxIICSCV6KruHySgvSwtrEC~9iZUms~LDY0yPtgYPJDrn6mz-2sDRNUE7PlWc5F7-cdk4k2GkGNR8jZzXD1thg__' }}
+      />
         <Text>VEDRUNA EDUCACIÓN</Text>
       </View>
 
@@ -33,7 +32,7 @@ export function LoginScreen({ navigation }) {
         <Text>¿Olvidaste la contraseña?</Text>
         <Button 
         title="Log in"
-        onPress={() => navigation.navigate('Login')}
+        onPress={() => navigation.navigate('Tab')}
         style={styles.buttonLogin}
         />
         <View style={styles.containerRegister}>
@@ -64,9 +63,9 @@ const styles = StyleSheet.create({
   },
 
   image: {
-    justifyContent: 'center', // Centra los hijos verticalmente
-    alignItems: 'center', // Centra los hijos horizontalmente
-    backgroundColor: '#f0f0f0', // Color de fondo gris claro
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f0f0f0',
   },
 
   containerInput: {

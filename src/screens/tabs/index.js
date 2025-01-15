@@ -1,3 +1,2 @@
-
-export { HomeScreen } from "./tabs/HomeScreen"
-export { SettingsScreen } from "./navegacion/PostsScreen"
+export { HomeScreen } from "./HomeScreen"
+export { SettingsScreen } from "./SettingsScreen"
